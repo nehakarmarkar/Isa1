@@ -16,5 +16,11 @@ public class TestCar {
 		r.setCapacity(100);
 		assertEquals(100,r.getEngineCapacity());
 	}
+	
+	public void testForSuccess2() {
+		Car r=new Car();
+		r.setCapacity(60);
+		assertTrue(r.getEngineCapacity() > 100);
+	}
 
 }
